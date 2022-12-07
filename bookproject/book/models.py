@@ -10,7 +10,7 @@ RATE_CHOICES = [(x, str(x)) for x in range(0, MAX_RATE + 1)]
 class Book(models.Model):
     title = models.CharField(max_length=100)
     text = models.TextField()
-    thumbnail = models.ImageField(null=True, blank=True)
+    # thumbnail = models.ImageField(null=True, blank=True)
     category = models.CharField(
         max_length=100,
         choices=CATEGORY,

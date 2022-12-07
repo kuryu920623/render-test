@@ -82,9 +82,16 @@ def index_view(request):
             'object_list': object_list,
             'ranking_list': ranking_list,
             'page_obj': page_obj,
+            'test_key': 'テスト1234',
         }
     )
 
+def about_view(request):
+    return render(
+        request,
+        'book/about.html',
+        {},
+    )
 
 class CreateReviewView(LoginRequiredMixin, CreateView):
     model = Review

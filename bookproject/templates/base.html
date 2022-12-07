@@ -17,6 +17,7 @@
     <div class="navbar-nav d-flex flex-row">
       <a class="nav-link mx-3" href="{% url 'list-book' %}">書籍一覧</a>
       <a class="nav-link mx-3" href="{% url 'create-book' %}">書籍登録</a>
+      <a class="nav-link mx-3" href="{% url 'about' %}">about</a>
     </div>
     <div class="navbar-nav d-flex flex-row">
       {% if request.user.is_authenticated %}
